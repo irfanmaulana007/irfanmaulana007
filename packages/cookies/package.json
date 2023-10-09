@@ -1,0 +1,12 @@
+{
+    "name": "irfanmaulana007-cookies",
+    "version": "0.0.0",
+    "private": true,
+    "main": "index.ts",
+    "dependencies": {
+        "js-cookie": "^3.0.5"
+    },
+    "devDependencies": {
+        "@types/js-cookie": "^3.0.4"
+    }
+}
