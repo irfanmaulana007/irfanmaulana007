@@ -1,10 +1,5 @@
 name: Trigger workspace changes
 
-permissions:
-    id-token: write
-    contents: read
-    checks: write
-
 on:
     # Trigger the workflow on push or pull request,
     # but only for the main branch
@@ -18,6 +13,10 @@ on:
 jobs:
     changes:
         runs-on: ubuntu-latest
+        permissions:
+            id-token: write
+            contents: read
+            checks: write
         outputs:
             src: ${{ steps.changes.outputs.ads_sandbox }}
             infra: ${{ steps.changes.outputs.portofolio }}
