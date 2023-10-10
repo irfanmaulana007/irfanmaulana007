@@ -1,4 +1,4 @@
-name: Lint
+name: Test Build
 
 on:
   # Trigger the workflow on push or pull request,
@@ -29,8 +29,5 @@ jobs:
       - name: Install Node.js dependencies
         run: yarn workspace ads-sandbox install
 
-      - name: Run linters
-        uses: wearerequired/lint-action@v2
-        with:
-          eslint: true
-          prettier: true
+      - name: Build
+        run: yarn build --scope ads-sandbox
