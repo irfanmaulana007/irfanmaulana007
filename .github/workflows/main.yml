@@ -1,33 +1,42 @@
-name: Test Build
-
 on:
-  # Trigger the workflow on push or pull request,
-  # but only for the main branch
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+    # Trigger the workflow on push or pull request,
+    # but only for the main branch
+    push:
+        branches:
+            - main
+    pull_request:
+        branches:
+            - main
 
 jobs:
-  run-linters:
-    name: Run linters
-    runs-on: ubuntu-latest
+    changes:
+        runs-on: ubuntu-latest
+        outputs:
+            src: ${{ steps.changes.outputs.ads_sandbox }}
+            infra: ${{ steps.changes.outputs.portofolio }}
+        steps:
+            - uses: actions/checkout@v3
+            - uses: dorny/paths-filter@v2
+              id: changes
+              with:
+                  filters: |
+                      ads_sandbox:
+                        - 'apps/ads-sandbox/**'
+                      portofolio:
+                        - 'apps/portofolio/**'
 
-    steps:
-      - name: Check out Git repository
-        uses: actions/checkout@v3
+    ads_sandbox:
+        needs: changes
+        if: ${{ needs.changes.outputs.src == 'true' }}
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+            - run: apps/ads-sandbox/.github/workflows/staging.yml
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v1
-        with:
-          node-version: 18
-
-
-      # ESLint and Prettier must be in `package.json`
-      - name: Install Node.js dependencies
-        run: yarn workspace ads-sandbox install
-
-      - name: Build
-        run: yarn build --scope ads-sandbox
+    portofolio:
+        needs: changes
+        if: ${{ needs.changes.outputs.infra == 'true' }}
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+            - run: apps/portofolio/.github/workflows/staging.yml
