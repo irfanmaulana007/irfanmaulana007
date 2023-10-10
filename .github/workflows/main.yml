@@ -1,3 +1,10 @@
+name: Trigger workspace changes
+
+permissions:
+    id-token: write
+    contents: read
+    checks: write
+
 on:
     # Trigger the workflow on push or pull request,
     # but only for the main branch
