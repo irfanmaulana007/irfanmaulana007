@@ -11,8 +11,10 @@ runs:
           with:
               node-version: 18
 
-        - name: Install Node.js dependencies
+        - name: Install dependencies
           run: yarn workspace ads-sandbox install
+          shell: bash
 
         - name: Build
           run: yarn build --scope ads-sandbox
+          shell: bash
