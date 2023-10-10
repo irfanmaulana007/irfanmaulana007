@@ -10,6 +10,7 @@ on:
 
 jobs:
     changes_check:
+        name: Changes Check
         runs-on: ubuntu-latest
         permissions:
             id-token: write
@@ -31,6 +32,7 @@ jobs:
                         - 'apps/portofolio/**'
 
     test_build_ads_sandbox:
+        name: Test build ads-sandbox
         needs: changes_check
         if: ${{ needs.changes_check.outputs.src == 'true' }}
         runs-on: ubuntu-latest
@@ -39,6 +41,7 @@ jobs:
             - uses: ./apps/ads-sandbox/.github/actions/staging
 
     test_build_portofolio:
+        name: Test build portofolio
         needs: changes_check
         if: ${{ needs.changes_check.outputs.src == 'true' }}
         runs-on: ubuntu-latest
