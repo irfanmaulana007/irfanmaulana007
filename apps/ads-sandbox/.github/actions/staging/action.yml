@@ -1,0 +1,20 @@
+name: Test Build Ads-Sandbox
+
+runs:
+    using: 'composite'
+    steps:
+        - name: Check out Git repository
+          uses: actions/checkout@v3
+
+        - name: Set up Node.js
+          uses: actions/setup-node@v1
+          with:
+              node-version: 18
+
+        - name: Install dependencies
+          run: yarn workspace ads-sandbox install
+          shell: bash
+
+        - name: Build
+          run: yarn build --scope ads-sandbox
+          shell: bash
