@@ -1,22 +1,20 @@
 name: Test Build Ads-Sandbox
 
 runs:
-    run-linters:
-        name: Run linters
-        runs-on: ubuntu-latest
+    name: Run linters
+    runs-on: ubuntu-latest
 
-        steps:
-            - name: Check out Git repository
-              uses: actions/checkout@v3
+    steps:
+        - name: Check out Git repository
+          uses: actions/checkout@v3
 
-            - name: Set up Node.js
-              uses: actions/setup-node@v1
-              with:
-                  node-version: 18
+        - name: Set up Node.js
+          uses: actions/setup-node@v1
+          with:
+              node-version: 18
 
-            # ESLint and Prettier must be in `package.json`
-            - name: Install Node.js dependencies
-              run: yarn workspace ads-sandbox install
+        - name: Install Node.js dependencies
+          run: yarn workspace ads-sandbox install
 
-            - name: Build
-              run: yarn build --scope ads-sandbox
+        - name: Build
+          run: yarn build --scope ads-sandbox

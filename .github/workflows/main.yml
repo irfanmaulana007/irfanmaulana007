@@ -1,8 +1,6 @@
 name: Trigger workspace changes
 
 on:
-    # Trigger the workflow on push or pull request,
-    # but only for the main branch
     push:
         branches:
             - main
@@ -11,7 +9,7 @@ on:
             - main
 
 jobs:
-    changes:
+    changes_check:
         runs-on: ubuntu-latest
         permissions:
             id-token: write
@@ -32,17 +30,17 @@ jobs:
                       portofolio:
                         - 'apps/portofolio/**'
 
-    ads_sandbox:
-        needs: changes
-        if: ${{ needs.changes.outputs.src == 'true' }}
+    test_build_ads_sandbox:
+        needs: changes_check
+        if: ${{ needs.changes_check.outputs.src == 'true' }}
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v3
             - uses: ./apps/ads-sandbox/.github/actions/staging
 
-    portofolio:
-        needs: changes
-        if: ${{ needs.changes.outputs.src == 'true' }}
+    test_build_portofolio:
+        needs: changes_check
+        if: ${{ needs.changes_check.outputs.src == 'true' }}
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v3
