@@ -33,11 +33,13 @@ jobs:
                         - 'apps/portofolio/**'
 
     ads_sandbox:
-        needs: changes
-        if: ${{ needs.changes.outputs.src == 'true' }}
+        name: trigger_ads_sandbox
+        # needs: changes
+        # if: ${{ needs.changes.outputs.src == 'true' }}
         uses: ./apps/ads-sandbox/.github/workflows/staging.yml@main
 
     portofolio:
-        needs: changes
-        if: ${{ needs.changes.outputs.infra == 'true' }}
+        name: trigger_portofolio
+        # needs: changes
+        # if: ${{ needs.changes.outputs.infra == 'true' }}
         uses: ./apps/portofolio/.github/workflows/staging.yml@main
