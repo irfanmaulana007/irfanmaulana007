@@ -1,7 +1,7 @@
 name: Test Build Ads-Sandbox
 
 runs:
-    runs-on: ubuntu-latest
+    using: 'composite'
     steps:
         - name: Check out Git repository
           uses: actions/checkout@v3
