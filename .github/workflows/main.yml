@@ -37,15 +37,13 @@ jobs:
         if: ${{ needs.changes.outputs.src == 'true' }}
         runs-on: ubuntu-latest
         steps:
-          - uses: actions/checkout@v3
-          - name: trigger_ads_sandbox
-            uses: ./apps/ads-sandbox/.github/actions/staging.yml@main
+            - uses: actions/checkout@v3
+            - uses: ./apps/ads-sandbox/.github/actions
 
     portofolio:
-      needs: changes
-      if: ${{ needs.changes.outputs.src == 'true' }}
-      runs-on: ubuntu-latest
-      steps:
-        - uses: actions/checkout@v3
-        - name: trigger_portofolio
-          uses: ./apps/portofolio/.github/actions/staging.yml@main
+        needs: changes
+        if: ${{ needs.changes.outputs.src == 'true' }}
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+            - uses: ./apps/portofolio/.github/actions
