@@ -1,18 +1,18 @@
 name: Test Build Ads-Sandbox
 
 runs:
-    run-linters:
-        steps:
-            - name: Check out Git repository
-              uses: actions/checkout@v3
+    runs-on: ubuntu-latest
+    steps:
+        - name: Check out Git repository
+          uses: actions/checkout@v3
 
-            - name: Set up Node.js
-              uses: actions/setup-node@v1
-              with:
-                  node-version: 18
+        - name: Set up Node.js
+          uses: actions/setup-node@v1
+          with:
+              node-version: 18
 
-            - name: Install Node.js dependencies
-              run: yarn workspace portofolio install
+        - name: Install Node.js dependencies
+          run: yarn workspace portofolio install
 
-            - name: Build
-              run: yarn build --scope portofolio
+        - name: Build
+          run: yarn build --scope portofolio
