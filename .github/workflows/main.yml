@@ -38,7 +38,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v3
-            - run: apps/ads-sandbox/.github/workflows/staging.yml
+            - uses: apps/ads-sandbox/.github/workflows/staging.yml
 
     portofolio:
         needs: changes
@@ -46,4 +46,5 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v3
-            - run: apps/portofolio/.github/workflows/staging.yml
+            - uses: apps/ads-sandbox/.github/workflows/staging.yml
+            # - run: apps/portofolio/.github/workflows/staging.yml
