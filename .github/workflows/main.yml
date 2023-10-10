@@ -11,35 +11,35 @@ on:
             - main
 
 jobs:
-    changes:
-        runs-on: ubuntu-latest
-        permissions:
-            id-token: write
-            contents: read
-            checks: write
-            pull-requests: read
-        outputs:
-            src: ${{ steps.changes.outputs.ads_sandbox }}
-            infra: ${{ steps.changes.outputs.portofolio }}
-        steps:
-            - uses: actions/checkout@v3
-            - uses: dorny/paths-filter@v2
-              id: changes
-              with:
-                  filters: |
-                      ads_sandbox:
-                        - 'apps/ads-sandbox/**'
-                      portofolio:
-                        - 'apps/portofolio/**'
+    # changes:
+    #     runs-on: ubuntu-latest
+    #     permissions:
+    #         id-token: write
+    #         contents: read
+    #         checks: write
+    #         pull-requests: read
+    #     outputs:
+    #         src: ${{ steps.changes.outputs.ads_sandbox }}
+    #         infra: ${{ steps.changes.outputs.portofolio }}
+    #     steps:
+    #         - uses: actions/checkout@v3
+    #         - uses: dorny/paths-filter@v2
+    #           id: changes
+    #           with:
+    #               filters: |
+    #                   ads_sandbox:
+    #                     - 'apps/ads-sandbox/**'
+    #                   portofolio:
+    #                     - 'apps/portofolio/**'
 
     ads_sandbox:
         name: trigger_ads_sandbox
-        needs: changes
-        if: ${{ needs.changes.outputs.src == 'true' }}
+        # needs: changes
+        # if: ${{ needs.changes.outputs.src == 'true' }}
         uses: ./../../apps/ads-sandbox/.github/workflows/staging.yml@main
 
     portofolio:
         name: trigger_portofolio
-        needs: changes
-        if: ${{ needs.changes.outputs.infra == 'true' }}
+        # needs: changes
+        # if: ${{ needs.changes.outputs.infra == 'true' }}
         uses: ./../../apps/portofolio/.github/workflows/staging.yml@main
