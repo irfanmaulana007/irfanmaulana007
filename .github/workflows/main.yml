@@ -35,8 +35,9 @@ jobs:
     ads_sandbox:
         needs: changes
         if: ${{ needs.changes.outputs.src == 'true' }}
-        uses: ./apps/ads-sandbox/.github/workflows/staging.yml@run-linters
-        # runs-on: ubuntu-latest
+        runs-on: ubuntu-latest
+        steps:
+          - uses: ./apps/ads-sandbox/.github/workflows/staging.yml@run-linters
         # steps:
         #     - uses: actions/checkout@v3
         #     - run: ./apps/ads-sandbox/.github/workflows/staging.yml
@@ -44,7 +45,10 @@ jobs:
     portofolio:
         needs: changes
         if: ${{ needs.changes.outputs.infra == 'true' }}
-        uses: ./apps/portofolio/.github/workflows/staging.yml@run-linters
+        runs-on: ubuntu-latest
+        steps:
+          - uses: ./apps/ads-sandbox/.github/workflows/staging.yml@run-linters
+        # uses: ./apps/portofolio/.github/workflows/staging.yml@run-linters
         # runs-on: ubuntu-latest
         # steps:
         #     - uses: actions/checkout@v3
