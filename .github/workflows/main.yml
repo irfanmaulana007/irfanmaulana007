@@ -38,7 +38,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v3
-            - uses: ./apps/ads-sandbox/.github/actions
+            - uses: ./apps/ads-sandbox/.github/actions/staging
 
     portofolio:
         needs: changes
@@ -46,4 +46,4 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v3
-            - uses: ./apps/portofolio/.github/actions
+            - uses: ./apps/portofolio/.github/actions/staging
