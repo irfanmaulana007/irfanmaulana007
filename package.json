@@ -21,5 +21,8 @@
         "tsconfig": "*",
         "turbo": "latest"
     },
-    "packageManager": "yarn@1.22.19"
+    "packageManager": "yarn@1.22.19",
+    "dependencies": {
+        "clsx": "^2.0.0"
+    }
 }
