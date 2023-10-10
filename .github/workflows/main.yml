@@ -14,9 +14,7 @@ jobs:
     changes:
         runs-on: ubuntu-latest
         permissions:
-            id-token: write
-            contents: read
-            checks: write
+            pull-requests: read
         outputs:
             src: ${{ steps.changes.outputs.ads_sandbox }}
             infra: ${{ steps.changes.outputs.portofolio }}
