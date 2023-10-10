@@ -1,9 +1,6 @@
 name: Test Build Ads-Sandbox
 
 runs:
-    name: Run linters
-    runs-on: ubuntu-latest
-
     steps:
         - name: Check out Git repository
           uses: actions/checkout@v3
