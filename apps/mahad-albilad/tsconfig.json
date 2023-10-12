@@ -1,0 +1,19 @@
+{
+    "extends": "tsconfig/nextjs.json",
+    "compilerOptions": {
+        "paths": {
+            "app/*": ["./app/*"],
+            "assets/*": ["./assets/*"],
+            "components/*": ["./components/*"],
+            "contexts/*": ["./core/contexts/*"],
+            "packages/*": ["./../../packages/*"],
+            "packages/ui": ["./../../packages/ui/dist"],
+            "providers/*": ["./core/providers/*"],
+            "utils/*": ["./core/utils/*"],
+            "features/*": ["./features/*"],
+            "services/*": ["./services/*"]
+        }
+    },
+    "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+    "exclude": ["node_modules"]
+}

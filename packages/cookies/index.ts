@@ -2,7 +2,7 @@ import { ICookies } from './type'
 import Cookies from 'js-cookie'
 
 const KEY_PREFIX = '_im-'
-class Pass3Cookies implements ICookies {
+class CustomCookies implements ICookies {
     get(key: string): string | null {
         return Cookies.get(KEY_PREFIX + key) ?? null
     }
@@ -27,5 +27,5 @@ class Pass3Cookies implements ICookies {
     }
 }
 
-const pass3Cookies = new Pass3Cookies()
-export default pass3Cookies
+const customCookies = new CustomCookies()
+export default customCookies

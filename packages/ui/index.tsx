@@ -1,2 +1,5 @@
+// styles
+import "./styles.css";
+
 // component exports
-export { Card } from "./card";
+export * from './src/components/text'
