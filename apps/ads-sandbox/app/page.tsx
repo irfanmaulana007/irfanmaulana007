@@ -20,6 +20,22 @@ export default function Home() {
                 iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
                 vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
             </span>
+            <div className='flex gap-4'>
+                <div
+                    dangerouslySetInnerHTML={{
+                        __html: "<script src='https://widget.p3a.net/widget-exchange.dev.js?placement=native&width=160&height=600&click_url=https://bid.p3a.net/api/v1/track/click?bidid=5D32CBF6-934D-418D-900A-6B9CA712BBB3B%26network=pubmatic%26url=https%3A%2F%2Fnoctua.gg%2Fgames%2Fidle_dino_museum&adid=30b57ea3-72ee-426a-ae82-7b327286d8b5&creative_url=https%3A%2F%2Fmedia.play3.id%2Frtb%2FIDM-ads_banner-160x600.jpg&impression_url=https://bid.p3a.net/api/v1/track/impression?adid=30b57ea3-72ee-426a-ae82-7b327286d8b5%2526bidid%253D5D32CBF6-934D-418D-900A-6B9CA712BBB3B'></script>",
+                    }}></div>
+                <div className='flex flex-col gap-4'>
+                    <div
+                        dangerouslySetInnerHTML={{
+                            __html: "<script src='https://widget.p3a.net/widget-exchange.dev.js?placement=native&width=300&height=250&click_url=https://bid.p3a.net/api/v1/track/click?bidid=5D32CBF6-934D-418D-900A-6B9CA712BBB3B%26network=pubmatic%26url=https%3A%2F%2Fnoctua.gg%2Fgames%2Fidle_dino_museum&adid=30b57ea3-72ee-426a-ae82-7b327286d8b5&creative_url=https%3A%2F%2Fmedia.play3.id%2Frtb%2FIDM-ads_banner-300x250.jpg&impression_url=https://bid.p3a.net/api/v1/track/impression?adid=30b57ea3-72ee-426a-ae82-7b327286d8b5%2526bidid%253D5D32CBF6-934D-418D-900A-6B9CA712BBB3B'></script>",
+                        }}></div>
+                    <div
+                        dangerouslySetInnerHTML={{
+                            __html: "<script src='https://widget.p3a.net/widget-exchange.dev.js?placement=native&width=300&height=250&click_url=https://bid.p3a.net/api/v1/track/click?bidid=5D32CBF6-934D-418D-900A-6B9CA712BBB3B%26network=pubmatic%26url=https%3A%2F%2Fnoctua.gg%2Fgames%2Fidle_dino_museum&adid=30b57ea3-72ee-426a-ae82-7b327286d8b5&creative_url=https%3A%2F%2Fmedia.play3.id%2Frtb%2FIDM-ads_banner-300x250.jpg&impression_url=https://bid.p3a.net/api/v1/track/impression?adid=30b57ea3-72ee-426a-ae82-7b327286d8b5%2526bidid%253D5D32CBF6-934D-418D-900A-6B9CA712BBB3B'></script>",
+                        }}></div>
+                </div>
+            </div>
             <span>
                 At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
                 praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias
