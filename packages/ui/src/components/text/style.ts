@@ -3,7 +3,8 @@ import { cva } from 'class-variance-authority'
 export const textStyle = cva([], {
     variants: {
         intent: {
-            base: ['text-grey'],
+            base: ['text-black'],
+            grey: ['text-grey'],
             dark: ['text-dark'],
             light: ['text-light'],
             white: ['text-white'],
