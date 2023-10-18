@@ -4,7 +4,10 @@
         "paths": {
             "app/*": ["./app/*"],
             "assets/*": ["./assets/*"],
+            "components/*": ["./components/*"],
             "core/*": ["./core/*"],
+            "features/*": ["./features/*"],
+            "packages/ui": ["./../../packages/ui"],
             "packages/*": ["./../../packages/*"],
             "utils/*": ["./utils/*"],
             "public/*": ["./public/*"],

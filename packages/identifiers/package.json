@@ -1,0 +1,16 @@
+{
+    "name": "identifiers",
+    "version": "0.0.0",
+    "private": true,
+    "main": "index.ts",
+    "dependencies": {
+        "@fingerprintjs/fingerprintjs": "^4.1.0",
+        "js-cookie": "^3.0.5",
+        "typescript": "latest",
+        "uuid": "^9.0.1"
+    },
+    "devDependencies": {
+        "@types/js-cookie": "^3.0.4",
+        "@types/uuid": "^9.0.5"
+    }
+}

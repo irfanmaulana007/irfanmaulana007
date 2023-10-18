@@ -1,9 +1,14 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Raleway } from 'next/font/google'
+
+import 'packages/ui/dist/index.css'
+
+import Footer from 'components/footer'
+import Navigation from 'components/navigation'
 
 import 'assets/css/global.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const raleway = Raleway({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
     title: 'Irfanmaulan007',
@@ -13,7 +18,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html lang='en'>
-            <body className={inter.className}>{children}</body>
+            <body className={raleway.className}>
+                <Navigation />
+                {children}
+                <Footer />
+            </body>
         </html>
     )
 }

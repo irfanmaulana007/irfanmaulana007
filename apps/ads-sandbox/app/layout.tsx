@@ -1,7 +1,7 @@
 import clsx from 'clsx'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-// import Script from 'next/script'
+import Script from 'next/script'
 
 import 'assets/css/global.css'
 
@@ -21,9 +21,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 </header>
                 <main className='container min-h-screen px-5 py-14'>{children}</main>
 
-                {/* <Script src='http://localhost:5173/js/widget.js?am=bottom-banner&key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJQbGF5MyIsInN1YiI6ImRpZDpldGhyOjB4MzI5QWM5MkU5Q2RFNTQ5RTBkYTJiMTQwYzY1MjU1ZDhhRWZEQzE4NSJ9.bir3iIOeFqMWSwPwDpQk9ArJjJYtsSfcy-O72kIfvLM' /> */}
-
-                {/* <Script src='http://localhost:5173/js/widget-external-platform.js?am=bottom-banenr&aus=160x600&key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJQbGF5MyIsInN1YiI6ImRpZDpldGhyOjB4MzI5QWM5MkU5Q2RFNTQ5RTBkYTJiMTQwYzY1MjU1ZDhhRWZEQzE4NSJ9.bir3iIOeFqMWSwPwDpQk9ArJjJYtsSfcy-O72kIfvLM&click_url=https%3A%2F%2Fnoctua.gg%2Fgames%2Fidle_dino_museum&creative_url=https%3A%2F%2Fmedia.play3.id%2Frtb%2FIDM-ads_banner-160x600.jpg' /> */}
+                <Script src='https://widget.p3a.net/widget.dev.js?am=overlay&key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJQbGF5MyIsInN1YiI6ImRpZDpldGhyOjB4MzI5QWM5MkU5Q2RFNTQ5RTBkYTJiMTQwYzY1MjU1ZDhhRWZEQzE4NSJ9.bir3iIOeFqMWSwPwDpQk9ArJjJYtsSfcy-O72kIfvLM' />
+                {/* <Script src='http://localhost:3000/widget.js?am=bottom-banner&key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJQbGF5MyIsInN1YiI6ImRpZDpldGhyOjB4MzI5QWM5MkU5Q2RFNTQ5RTBkYTJiMTQwYzY1MjU1ZDhhRWZEQzE4NSJ9.bir3iIOeFqMWSwPwDpQk9ArJjJYtsSfcy-O72kIfvLM' /> */}
             </body>
         </html>
     )

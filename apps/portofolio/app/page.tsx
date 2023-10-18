@@ -1,7 +1,13 @@
+import HomeIntroContainer from 'features/home/containers/intro'
+import HomeProjectsContainer from 'features/home/containers/projects'
+import HomeShortDescriptionContainer from 'features/home/containers/short-description'
+
 export default function Home() {
     return (
-        <main className='flex min-h-screen flex-col items-center justify-center'>
-            <h3>Portofolio</h3>
-        </main>
+        <>
+            <HomeIntroContainer />
+            <HomeProjectsContainer />
+            <HomeShortDescriptionContainer />
+        </>
     )
 }
