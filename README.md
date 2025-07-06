@@ -1,81 +1,50 @@
-# Turborepo starter
+# Hi there, I'm Irfan 👋
 
-This is an official starter Turborepo.
+I'm a passionate Frontend Developer based in DKI Jakarta, Indonesia with 5+ years of experience crafting exceptional digital experiences. I specialize in building modern, responsive, and user-friendly web applications using cutting-edge technologies.
 
-## Using this example
+## 🚀 Skills
 
-Run the following command:
+### Languages
+- JavaScript, TypeScript, HTML, CSS
 
-```sh
-npx create-turbo@latest
-```
+### Frameworks & Libraries
+- React, Next.js, Vue.js
+- Tailwind CSS, Styled Components, Framer Motion
+- Shadcn UI, Ant Design
 
-## What's inside?
+### Tools
+- Git, Webpack, Vite, Figma
 
-This Turborepo includes the following packages/apps:
+## 🔥 Featured Projects
 
-### Apps and Packages
+### H5 Games Platform
+A modern HTML5 gaming platform built with Next.js that offers a seamless gaming experience across devices.
+- [Demo](https://h5-games-platform.vercel.app/)
+- [Code](https://github.com/irfanmaulana007/h5-games-platform)
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `ui`: a stub React component library shared by both `web` and `docs` applications
-- `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `tsconfig`: `tsconfig.json`s used throughout the monorepo
+### Mahad Albilad
+A comprehensive website for an Islamic boarding school featuring course management, student registration, and more.
+- [Demo](https://mahad-albilad.or.id)
+- [Code](https://github.com/irfanmaulana007/mahad-albilad-v5)
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+### Noctua Platform
+A web-based platform for Noctua, featuring engaging gameplay mechanics, character customization, and social sharing capabilities.
+- [Demo](https://noctua.gg/)
 
-### Utilities
+### Sentra Games
+A comprehensive gaming portal platform that serves as a one-stop destination for gamers.
+- [Demo](https://sentra-games.vercel.app/)
+- [Code](https://github.com/irfanmaulana007/sentra-games)
 
-This Turborepo has some additional tools already setup for you:
+## 📫 Contact Me
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+- **Email**: professional.irfanmaulana007@gmail.com
+- **Phone**: +62 851-5879-0074
+- **Location**: DKI Jakarta, Indonesia
 
-### Build
+## 🔗 Connect With Me
 
-To build all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm build
-```
-
-### Develop
-
-To develop all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm dev
-```
-
-### Remote Caching
-
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
-
-```
-cd my-turborepo
-npx turbo login
-```
-
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
-
-```
-npx turbo link
-```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+- [GitHub](https://github.com/irfanmaulana007)
+- [LinkedIn](https://linkedin.com/in/irfanmaulana007)
+- [Twitter](https://twitter.com/irfanmaulana007)
+- [Instagram](https://instagram.com/irfanmaulana007)
