@@ -1,50 +1,57 @@
 # Hi there, I'm Irfan 👋
 
-I'm a passionate Frontend Developer based in DKI Jakarta, Indonesia with 5+ years of experience crafting exceptional digital experiences. I specialize in building modern, responsive, and user-friendly web applications using cutting-edge technologies.
+I'm a **Frontend Developer** based in DKI Jakarta, Indonesia, building modern web
+applications since 2018. I specialize in crafting fast, responsive, and accessible
+interfaces with **React**, **Next.js**, and **TypeScript** — spanning marketing
+sites, data-heavy dashboards, and full-stack products.
 
-## 🚀 Skills
+## 🛠️ Tech Stack
 
-### Languages
-- JavaScript, TypeScript, HTML, CSS
-
-### Frameworks & Libraries
-- React, Next.js, Vue.js
-- Tailwind CSS, Styled Components, Framer Motion
-- Shadcn UI, Ant Design
-
-### Tools
-- Git, Webpack, Vite, Figma
+**Languages:** JavaScript · TypeScript · HTML · CSS
+**Frameworks:** React · Next.js · Vue.js
+**Styling & UI:** Tailwind CSS · Shadcn UI · Styled Components · Ant Design · Framer Motion
+**Data & State:** TanStack Query · Zustand
+**Backend & Infra:** Node.js · Go · PostgreSQL · Prisma
+**Tools:** Git · Vite · Webpack · Figma
 
 ## 🔥 Featured Projects
 
-### H5 Games Platform
-A modern HTML5 gaming platform built with Next.js that offers a seamless gaming experience across devices.
-- [Demo](https://h5-games-platform.vercel.app/)
-- [Code](https://github.com/irfanmaulana007/h5-games-platform)
+### Simagis
+A management information system dashboard — searchable data tables, barcode
+generation, Excel import/export, and interactive charts, with role-based access.
+`React` `Vite` `TypeScript` `TanStack Query` `Recharts`
 
-### Mahad Albilad
-A comprehensive website for an Islamic boarding school featuring course management, student registration, and more.
-- [Demo](https://mahad-albilad.or.id)
-- [Code](https://github.com/irfanmaulana007/mahad-albilad-v5)
+### Muthia Maharani
+Portfolio website for a UI/UX designer, built with Next.js.
+- 🔗 [Live](https://muthiamhrni.com)
+`Next.js` `TypeScript` `Tailwind CSS` `Shadcn UI`
 
-### Noctua Platform
-A web-based platform for Noctua, featuring engaging gameplay mechanics, character customization, and social sharing capabilities.
-- [Demo](https://noctua.gg/)
+### Hiji 2 Tilu
+A training & retreat ground website — "Grounded in Nature, Growing in Unity" —
+with content-managed pages via a Strapi CMS and smooth animated browsing.
+`Next.js` `TypeScript` `Tailwind CSS` `Framer Motion` `Strapi CMS`
 
 ### Sentra Games
-A comprehensive gaming portal platform that serves as a one-stop destination for gamers.
-- [Demo](https://sentra-games.vercel.app/)
-- [Code](https://github.com/irfanmaulana007/sentra-games)
+A comprehensive gaming portal that serves as a one-stop destination for gamers.
+- 🔗 [Live](https://sentra-games.vercel.app/) · [Code](https://github.com/irfanmaulana007/sentra-games)
+`Next.js` `TypeScript` `Tailwind CSS` `Shadcn UI`
 
-## 📫 Contact Me
+### Head Office Support System (HRIS)
+An enterprise HRIS platform for a large government agency — employee management,
+biometric attendance with SSO, document workflows, and operational dashboards.
+`Next.js` `TypeScript` `TanStack Query` `Go` `PostgreSQL`
 
-- **Email**: professional.irfanmaulana007@gmail.com
-- **Phone**: +62 851-5879-0074
-- **Location**: DKI Jakarta, Indonesia
+### Noctua Platform
+A web-based gaming platform with engaging gameplay, character customization,
+and social sharing.
+- 🔗 [Live](https://noctua.gg/)
+`Next.js` `TypeScript` `Tailwind CSS` `TanStack Query`
 
-## 🔗 Connect With Me
+> More work — including the H5 Games Platform and Gym Assistant — lives on my
+> [portfolio site](https://portfolio-alpha-mocha-31.vercel.app).
 
-- [GitHub](https://github.com/irfanmaulana007)
-- [LinkedIn](https://linkedin.com/in/irfanmaulana007)
-- [Twitter](https://twitter.com/irfanmaulana007)
-- [Instagram](https://instagram.com/irfanmaulana007)
+## 📫 Get in Touch
+
+- **Email:** professional.irfanmaulana007@gmail.com
+- **Location:** DKI Jakarta, Indonesia
+- [GitHub](https://github.com/irfanmaulana007) · [LinkedIn](https://linkedin.com/in/irfanmaulana007) · [Twitter](https://twitter.com/irfanmaulana007) · [Instagram](https://instagram.com/irfanmaulana007)
